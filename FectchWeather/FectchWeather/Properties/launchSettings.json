@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FectchWeather": {
+      "commandName": "Project",
+      "commandLineArgs": "--cities test, Vilnius, Kaunas, Klaipėda"
+    }
+  }
+}
