@@ -16,9 +16,7 @@ namespace FetchWeather.Services
                 client.DefaultRequestHeaders.Add("Accept", "text/plain");
                 client.DefaultRequestHeaders.Add("Authorization", authorizationToken);
                 var response = await client.GetAsync(finalUrl);
-                Console.WriteLine(response.StatusCode == HttpStatusCode.OK
-                    ? $"Got {city} weather info. Status code: {response.StatusCode}"
-                    : $"Error with {city}. Check city spelling. Status code: {response.StatusCode}");
+                
                 return response;
 
             }
